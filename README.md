@@ -10,6 +10,10 @@ Visual SQL Query Builder is a web application that allows users to construct SQL
 
 The system dynamically generates SQL queries and executes them on the backend, displaying results in a structured table format.
 
+## Application Preview
+
+![SQL Query Builder UI](screenshots/app.png)
+
 
 
 \## Technologies Used
