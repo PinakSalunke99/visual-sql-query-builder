@@ -1,0 +1,97 @@
+/* src/index.css */
+
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%; /* Ensure html and body can take full height */
+  width: 100%;  /* Ensure html and body can take full width */
+  overflow: hidden; /* Prevent body scrollbars if App fills height */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* Keep your font choice */
+  /* Remove default flex centering from body */
+}
+
+#root {
+  height: 100%; /* Make the React root element fill the body height */
+  width: 100%;  /* Make the React root element fill the body width */
+  display: flex; /* Ensure #root uses flexbox */
+  flex-direction: column; /* Match App.jsx's root div direction */
+  /* Set default text/background colors here if needed, or let App.jsx handle it */
+  /* Example: */
+  /* color: #213547; */
+  /* background-color: #ffffff; */
+}
+
+/* Keep other styles if desired (like buttons, links), but remove default body centering */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 { /* Basic h1 styling */
+  font-size: 2em; /* Adjusted from 3.2em for better fit in header */
+  line-height: 1.1;
+  margin: 0; /* Remove default margins */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #f9f9f9; /* Default to light mode button */
+  color: #213547;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+
+/* Optional: Add basic styling for scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Remove the prefers-color-scheme media query for simplicity unless you specifically want dark mode */
+/*
+@media (prefers-color-scheme: light) {
+  :root {
+     color: #213547;
+     background-color: #ffffff;
+  }
+  a:hover {
+     color: #747bff;
+  }
+  button {
+     background-color: #f9f9f9;
+  }
+}
+*/
