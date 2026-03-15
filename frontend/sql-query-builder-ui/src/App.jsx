@@ -7,7 +7,7 @@ import BlockPalette from './BlockPalette';
 import Workspace from './Workspace';
 import ResultsTable from './ResultsTable';
 
-const API_BASE_URL = 'http://127.0.0.1:5000';
+const API_BASE_URL = 'https://visual-sql-query-builder-1.onrender.com';
 
 function App() {
   const [dbSchema, setDbSchema] = useState({});
